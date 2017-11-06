@@ -20,7 +20,7 @@ add[1].onclick = function() {
 
 var del = document.getElementsByClassName("del"); 
 
-del[1].onclick = function(){
+del[0].onclick = function(){
 	if(document.getElementsByClassName("line")[0].getElementsByClassName("cell").length !== 1){
 		
 		for(var i = 0; i < lines.length; i++){
@@ -35,7 +35,7 @@ del[1].onclick = function(){
 	}
 }
 
-del[0].onclick = function(){
+del[1].onclick = function(){
 	if(lines.length !== 1){
 		document.body.getElementsByTagName("div")[0].removeChild(lines[lines.length-1]);
 		}
