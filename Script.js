@@ -62,7 +62,7 @@ del[0].onclick = function(){
 	del[0].style.visibility = del[1].style.visibility = "hidden";
 }	
 
-
+// Глянь тут почему кнопки смещаются при прокрутке страницы
 document.getElementsByTagName("div")[0].onmouseover  = function(){
 	var cells = document.getElementsByClassName("cell");
 	for(var i = 0; i < cells.length; i++){
