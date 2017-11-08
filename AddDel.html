@@ -31,6 +31,7 @@
 				background-color: #ffd400;	
 				outline: none;
 				border: none;
+				transition: background-color 0.5s;
 			}
 			.col{
 				position: absolute;
@@ -41,27 +42,12 @@
 			.lain{
 				margin-left: 70px;
 			}
-			@keyframes mouseOnAdd {
-					from {
-						background-color: #ffd400;
-					  }
-
-					  to {
-						background-color: #ffe256;
-					  }
-			}
+			
 			.add:hover{
-				animation: mouseOnAdd  0.5s linear forwards;
+				transition: background-color 0.5s;
+				background-color: #ffe256;
 			}
-			@keyframes mouseOnDel {
-					from {
-						background-color: red;
-					  }
-
-					  to {
-						background-color: #ff7c7c;
-					  }
-			}
+			
 			.del{
 				position: absolute;
 				visibility: hidden;
@@ -73,10 +59,12 @@
 				background-color: red;	
 				outline: none;
 				border: none;
+				transition: background-color 1s;
 			}
 			
 			.del:hover{
-				animation: mouseOnDel  0.5s forwards;
+				transition: background-color 0.5s;
+				background-color: #ff7c7c;
 			}
 			
 			#delLine{ 
