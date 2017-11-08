@@ -62,7 +62,7 @@ del[0].onclick = function(){
 	del[0].style.visibility = del[1].style.visibility = "hidden";
 }	
 
-// Глянь тут почему кнопки смещаются при прокрутке страницы
+
 document.getElementsByTagName("div")[0].onmouseover  = function(){
 	var cells = document.getElementsByClassName("cell");
 	for(var i = 0; i < cells.length; i++){
@@ -72,8 +72,8 @@ document.getElementsByTagName("div")[0].onmouseover  = function(){
 			var lines = document.getElementsByClassName("line");
 			if (lines.length !== 1){del[1].style.visibility = "visible";}
 			if (cells.length !== lines.length){del[0].style.visibility = "visible";}
-			del[1].style.top = event.currentTarget.getBoundingClientRect().top + "px";
-			del[0].style.left = event.currentTarget.getBoundingClientRect().left + "px";
+			del[1].style.top = event.currentTarget.getBoundingClientRect().top + pageYOffset + "px";
+			del[0].style.left = event.currentTarget.getBoundingClientRect().left + pageXOffset + "px";
 			
 		}
 	}
