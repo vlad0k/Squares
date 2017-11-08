@@ -6,7 +6,7 @@
 		
 		<style> 
 			body{
-				background-color: black;
+				background-color: white;
 			}
 			.cell{
 				float: left;
@@ -35,8 +35,8 @@
 			.col{
 				position: absolute;
 				top: 0;
-				left: 350px;
-				top: 69px;
+				left: 356px;
+				top: 71px;
 			}
 			.lain{
 				margin-left: 70px;
@@ -53,18 +53,6 @@
 			.add:hover{
 				animation: mouseOnAdd  0.5s linear forwards;
 			}
-			.del{
-				position: absolute;
-				margin: 2px;
-				font-size: 50px;
-				font-weight:bold;
-				color:white;
-				height: 64px;
-				width: 64px;
-				background-color: red;	
-				outline: none;
-				border: none;
-			}
 			@keyframes mouseOnDel {
 					from {
 						background-color: red;
@@ -74,46 +62,72 @@
 						background-color: #ff7c7c;
 					  }
 			}
-			.del:hover{
-				animation: mouseOnDel  0.4s linear forwards;
+			.del{
+				position: absolute;
+				visibility: hidden;
+				font-size: 50px;
+				font-weight:bold;
+				color:white;
+				height: 64px;
+				width: 64px;
+				background-color: red;	
+				outline: none;
+				border: none;
 			}
+			
+			.del:hover{
+				animation: mouseOnDel  0.5s forwards;
+			}
+			
 			#delLine{ 
 				top: 0px;
-				left: 78px;
+				left: 80px;
 			}
 		</style>
 	</head>
 	<body>
-		<button class = "del" id = "delLine">-</button>
-		<button class = "del" id = "delCol" style = "top: 69px;">-</button>
-		<div style = "border: 1px solid blue; width: 272px; margin: 68px; margin-bottom: 0;">
-			<div class = "line 1">
-				<div class = "cell"></div>
-				<div class = "cell"></div>
-				<div class = "cell"></div>
-				<div class = "cell"></div>
+		<button class="del" id="delLine" >-</button>
+		<button class="del" id="delCol" style="top: 73px;">-</button>
+
+		<div style = "border: 1px solid blue; width: 272px; margin: 68px; margin-bottom: 2px; padding: 2px;">
+			<div class="line">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
 			</div>
-			<div class = "line 2">
-				<div class = "cell"></div>
-				<div class = "cell"></div>
-				<div class = "cell"></div>
-				<div class = "cell"></div>
+			<div class="line">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
 			</div>
-			<div class = "line 3">
-				<div class = "cell"></div>
-				<div class = "cell"></div>
-				<div class = "cell"></div>
-				<div class = "cell"></div>
+			<div class="line">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
 			</div>
-			<div class = "line 4">
-				<div class = "cell"></div>
-				<div class = "cell"></div>
-				<div class = "cell"></div>
-				<div class = "cell"></div>
+			<div class="line">
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
+				<div class="cell"></div>
 			</div>
 		</div>
-		<button class = "add lain">+</button>
-		<button class = "add col">+</button>
-		<script src = "Script.js"></script>
+		<button class="add lain">+</button>
+		<button class="add col">+</button>
+		<script src="Script.js"></script>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
